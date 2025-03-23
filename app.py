@@ -139,12 +139,12 @@ if plot_additional:
   st.plotly_chart(fig7, use_container_width=True)
 
   # Graph 8: Scatter Plot of Workers vs Population with Trendline
-  fig8 = px.scatter(df, x='Population', y='Workers', title="Workers vs Population",color='State',color_continuous_scale="Viridis" ,trendline="ols")
+  fig8 = px.scatter(df, x='Population', y='Workers', title="Workers vs Population",color_continuous_scale="Viridis" ,trendline="ols")
   st.plotly_chart(fig8, use_container_width=True)
 
   # Graph 9: Density Heatmap of Male vs Female Literacy
   fig9 = px.density_heatmap(df, x='Male_Literate', y='Female_Literate',
-                            title="Density Heatmap: Male vs Female Literacy", color_continuous_scale="Viridis",facet_col="State")
+                            title="Density Heatmap: Male vs Female Literacy",color_continuous_scale="Viridis")
   st.plotly_chart(fig9, use_container_width=True)
 
   # Graph 10: Line Chart of Households with Television by State
