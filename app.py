@@ -5,7 +5,7 @@ import numpy as np
 import plotly.express as px
 st.set_page_config(layout='wide')
 
-df = pd.read_csv('/content/india_2011_census_data')
+df = pd.read_csv('Data/india_2011_census_data')
 
 st.title("📊 2011 Census India Data Visualization")
 
