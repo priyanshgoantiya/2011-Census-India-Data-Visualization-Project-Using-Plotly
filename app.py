@@ -121,7 +121,7 @@ if plot_additional:
   st.plotly_chart(fig4, use_container_width=True)
 
   # Graph 5: Scatter Plot of Male vs Female Literacy with Trendline
-  fig5 = px.scatter(df, x='Male_Literate', y='Female_Literate', title="Male vs Female Literacy", trendline="ols",color='State',
+  fig5 = px.scatter(df, x='Male_Literate', y='Female_Literate', title="Male vs Female Literacy", trendline="ols",
     color_continuous_scale="Viridis")
   st.plotly_chart(fig5, use_container_width=True)
 
